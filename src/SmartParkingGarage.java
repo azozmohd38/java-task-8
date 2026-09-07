@@ -352,7 +352,9 @@ public class SmartParkingGarage {
             return;
         }
 
+        int removedVehicles = parkingStack.size();
         parkingStack.clear();
+        totalDepartedToday += removedVehicles;
         System.out.println("Parking garage cleared.");
     }
 
