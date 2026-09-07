@@ -366,7 +366,6 @@ public class SmartParkingGarage {
 
         waitingQueue.clear();
         parkingStack.clear();
-
         totalParkedToday = 0;
         totalDepartedToday = 0;
 
