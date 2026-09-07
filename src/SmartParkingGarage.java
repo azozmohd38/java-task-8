@@ -154,13 +154,13 @@ public class SmartParkingGarage {
 
     public static void parkVehicle() {
 
-        if (waitingQueue.isEmpty()) {
-            System.out.println("No vehicles are waiting.");
+        if (parkingStack.size() >= MAX_CAPACITY) {
+            System.out.println("Garage is full.");
             return;
         }
 
-        if (parkingStack.size() >= MAX_CAPACITY) {
-            System.out.println("Garage is full.");
+        if (waitingQueue.isEmpty()) {
+            System.out.println("No vehicles are waiting.");
             return;
         }
 
