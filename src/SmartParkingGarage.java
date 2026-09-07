@@ -95,6 +95,17 @@ public class SmartParkingGarage {
     // Display Menu
     // =====================================
 
+    public static int readMenuChoice() {
+        while (!input.hasNextInt()) {
+            System.out.println("Invalid input! Please enter a number.");
+            input.next();
+        }
+
+        int choice = input.nextInt();
+        input.nextLine();
+        return choice;
+    }
+
     public static void displayMenu() {
 
         System.out.println("\n========= Smart Parking Garage =========");
