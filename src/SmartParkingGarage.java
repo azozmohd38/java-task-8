@@ -279,7 +279,12 @@ public class SmartParkingGarage {
         }
 
         System.out.print("Enter vehicle number: ");
-        String vehicle = input.nextLine().trim();
+        String vehicle = normalizeVehicle(input.nextLine());
+
+        if (vehicle.isEmpty()) {
+            System.out.println("Vehicle number cannot be blank.");
+            return;
+        }
 
         if (waitingQueue.contains(vehicle)) {
             System.out.println(vehicle + " is waiting in queue.");
