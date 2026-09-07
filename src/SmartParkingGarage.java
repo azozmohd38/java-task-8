@@ -194,6 +194,15 @@ public class SmartParkingGarage {
     // View Next Waiting Vehicle
     // =====================================
 
+    public static void parkNextWaitingAutomatically() {
+        if (!waitingQueue.isEmpty() && parkingStack.size() < MAX_CAPACITY) {
+            String next = waitingQueue.poll();
+            parkingStack.push(next);
+            totalParkedToday++;
+            System.out.println("Automatically parked: " + next);
+        }
+    }
+
     public static void viewNextWaitingVehicle() {
 
         if (waitingQueue.isEmpty()) {
