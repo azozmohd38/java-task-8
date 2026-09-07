@@ -304,7 +304,7 @@ public class SmartParkingGarage {
         int parked = parkingStack.size();
         int waiting = waitingQueue.size();
         int available = MAX_CAPACITY - parked;
-        int processed = totalParkedToday + totalDepartedToday;
+        int processed = totalParkedToday;
 
         double occupancy = ((double) parked / MAX_CAPACITY) * 100;
 
