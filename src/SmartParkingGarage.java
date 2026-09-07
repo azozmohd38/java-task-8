@@ -369,8 +369,11 @@ public class SmartParkingGarage {
     // Duplicate Check
     // =====================================
 
-    public static boolean isDuplicateVehicle(String vehicle) {
+    public static String normalizeVehicle(String vehicle) {
+        return vehicle == null ? "" : vehicle.trim().toUpperCase();
+    }
 
+    public static boolean isDuplicateVehicle(String vehicle) {
         return waitingQueue.contains(vehicle) || parkingStack.contains(vehicle);
     }
 }
