@@ -374,6 +374,7 @@ public class SmartParkingGarage {
     }
 
     public static boolean isDuplicateVehicle(String vehicle) {
-        return waitingQueue.contains(vehicle) || parkingStack.contains(vehicle);
+        String normalized = normalizeVehicle(vehicle);
+        return waitingQueue.contains(normalized) || parkingStack.contains(normalized);
     }
 }
