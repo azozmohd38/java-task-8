@@ -132,7 +132,7 @@ public class SmartParkingGarage {
     public static void addVehicle() {
 
         System.out.print("Enter vehicle number: ");
-        String vehicle = input.nextLine().trim();
+        String vehicle = normalizeVehicle(input.nextLine());
 
         if (vehicle.isEmpty()) {
             System.out.println("Vehicle number cannot be blank.");
