@@ -6,14 +6,14 @@ import java.util.Stack;
 public class SmartParkingGarage {
 
     // Collections
-     static Queue<String> waitingQueue = new LinkedList<>();
-     static Stack<String> parkingStack = new Stack<>();
+    static Queue<String> waitingQueue = new LinkedList<>();
+    static Stack<String> parkingStack = new Stack<>();
 
     // Constants
-     static final int MAX_CAPACITY = 10;
+    static final int MAX_CAPACITY = 10;
 
     // Statistics
-     static int totalParkedToday = 0;
+    static int totalParkedToday = 0;
      static int totalDepartedToday = 0;
 
     // Scanner
