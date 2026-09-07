@@ -331,7 +331,7 @@ public class SmartParkingGarage {
         }
 
         System.out.print("Are you sure? (Y/N): ");
-        String answer = input.nextLine();
+        String answer = input.nextLine().trim();
 
         if (answer.equalsIgnoreCase("Y")) {
             waitingQueue.clear();
