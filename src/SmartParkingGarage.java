@@ -27,7 +27,7 @@ public class SmartParkingGarage {
             displayMenu();
 
             while (!input.hasNextInt()) {
-                IO.println("Invalid input! Please enter a number.");
+                System.out.println("Invalid input! Please enter a number.");
                 input.next();
             }
 
@@ -103,21 +103,21 @@ public class SmartParkingGarage {
 
     public static void displayMenu() {
 
-        IO.println("\n========= Smart Parking Garage =========");
-        IO.println("1. Add Vehicle to Waiting Queue");
-        IO.println("2. Park Next Vehicle");
-        IO.println("3. Remove Parked Vehicle");
-        IO.println("4. View Next Waiting Vehicle");
-        IO.println("5. View Last Parked Vehicle");
-        IO.println("6. Display Waiting Queue");
-        IO.println("7. Display Parked Vehicles");
-        IO.println("8. Search Vehicle");
-        IO.println("9. Display Garage Statistics");
-        IO.println("10. Clear Waiting Queue");
-        IO.println("11. Clear Parking Garage");
-        IO.println("12. Reset Entire System");
-        IO.println("13. Exit");
-        IO.print("Enter your choice: ");
+        System.out.println("\n========= Smart Parking Garage =========");
+        System.out.println("1. Add Vehicle to Waiting Queue");
+        System.out.println("2. Park Next Vehicle");
+        System.out.println("3. Remove Parked Vehicle");
+        System.out.println("4. View Next Waiting Vehicle");
+        System.out.println("5. View Last Parked Vehicle");
+        System.out.println("6. Display Waiting Queue");
+        System.out.println("7. Display Parked Vehicles");
+        System.out.println("8. Search Vehicle");
+        System.out.println("9. Display Garage Statistics");
+        System.out.println("10. Clear Waiting Queue");
+        System.out.println("11. Clear Parking Garage");
+        System.out.println("12. Reset Entire System");
+        System.out.println("13. Exit");
+        System.out.print("Enter your choice: ");
     }
 
     // =====================================
