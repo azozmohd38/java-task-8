@@ -187,15 +187,7 @@ public class SmartParkingGarage {
 
         System.out.println("Vehicle removed: " + removed);
 
-        // Automatically park next waiting vehicle
-        if (!waitingQueue.isEmpty() && parkingStack.size() < MAX_CAPACITY) {
-
-            String next = waitingQueue.poll();
-            parkingStack.push(next);
-            totalParkedToday++;
-
-            System.out.println("Automatically parked: " + next);
-        }
+        parkNextWaitingAutomatically();
     }
 
     // =====================================
